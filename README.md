@@ -1,4 +1,4 @@
-# Claude Code Cost Optimization Guide
+# Claude Code Token Cost Reduction Guide(CCTCRG)
 
 > 🚀 **Complete Claude Code optimization solution to maximize your $20 plan value**
 
