@@ -1,0 +1,32 @@
+{
+  "name": "claude-code-optimization-guide",
+  "version": "1.0.0",
+  "description": "Complete Claude Code optimization guide for token saving and efficient interaction",
+  "main": "index.js",
+  "scripts": {
+    "install-global": "./install.sh",
+    "init-project": "./claude-init",
+    "status": "./claude-init status"
+  },
+  "keywords": [
+    "claude-code",
+    "optimization",
+    "ai",
+    "development",
+    "prompt-engineering",
+    "token-saving"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bin": {
+    "claude-init": "./claude-init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/claude-code-optimization-guide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/claude-code-optimization-guide/issues"
+  },
+  "homepage": "https://github.com/your-username/claude-code-optimization-guide#readme"
+}
