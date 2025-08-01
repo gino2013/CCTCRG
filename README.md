@@ -149,6 +149,8 @@ Output: Complete code file, no explanation
 
 ## 📈 Advanced Usage Monitoring Tools
 
+> **📝 Attribution Note**: Tool information below is referenced from community sources including V2EX discussions and GitHub project documentation.
+
 ### 🛠️ Professional Token Tracking
 Instead of manual tracking, use these powerful tools:
 
@@ -420,6 +422,8 @@ cp claude-code-optimization-guide/*.md /your-project/
 ---
 
 ## 📈 進階使用監控工具
+
+> **📝 引用說明**: 以下工具資訊引用自社群來源，包括 V2EX 討論和 GitHub 項目文檔等。
 
 ### 🛠️ 專業 Token 追蹤
 告別手動記錄，使用這些強大工具：

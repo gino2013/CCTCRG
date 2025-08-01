@@ -138,6 +138,8 @@ Phase 3: On existing foundation, add advanced features
 
 ### 📊 Token Usage Monitoring with Advanced Tools
 
+> **📝 Attribution Note**: The following tool introduction content is partially referenced from online community sharing and developer community discussions, organized and supplemented for inclusion in this guide. Main sources include V2EX community discussions, GitHub project documentation, etc.
+
 #### Discovering the Game-Changers
 While browsing V2EX one evening, I discovered a post about "ccusage" - a tool specifically designed to analyze Claude Code token usage. This was exactly what I'd been looking for!
 
@@ -236,6 +238,12 @@ These tools completely changed my approach to Claude Code:
 - Optimize work scheduling around reset times
 - Plan important coding sessions strategically
 - Track improvement in token efficiency over time
+
+#### 🔗 Tool Attribution
+- **ccusage**: Developed by [ryoppippi](https://github.com/ryoppippi), Project: https://github.com/ryoppippi/ccusage
+- **Claude-Code-Usage-Monitor**: Developed by [Maciek-roboblog](https://github.com/Maciek-roboblog), Project: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor
+- **CCSeva**: Mac menu bar application
+- **Content Sources**: Partially referenced from V2EX community discussions and developer sharing
 
 ---
 
@@ -514,6 +522,8 @@ cp QuickStartGuide.md /your-project-root/
 
 ### 📊 進階工具實現 Token 使用監控
 
+> **📝 引用說明**: 以下工具介紹內容部分引用自網路社群分享和開發者社群討論，經過整理和補充後納入本指南。主要來源包括 V2EX 社群討論、GitHub 項目文檔等。
+
 #### 意外的發現
 那天晚上在V2EX上閒逛，看到有人發了一個帖子說「發現了一個神器：ccusage，專門用來分析Claude Code的token使用情況」。我當時就想，這不就是我一直在找的東西嗎？
 
@@ -613,6 +623,12 @@ ccusage --mode calculate
 - 根據重置時間優化工作安排
 - 策略性規劃重要編碼工作
 - 追蹤token效率的改善情況
+
+#### 🔗 工具引用資訊
+- **ccusage**: 由 [ryoppippi](https://github.com/ryoppippi) 開發，項目地址：https://github.com/ryoppippi/ccusage
+- **Claude-Code-Usage-Monitor**: 由 [Maciek-roboblog](https://github.com/Maciek-roboblog) 開發，項目地址：https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor
+- **CCSeva**: Mac 選單列應用程式
+- **內容來源**: 部分內容參考 V2EX 社群討論和開發者分享
 
 ---
 
