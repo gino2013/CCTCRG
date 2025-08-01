@@ -42,24 +42,24 @@ git clone https://github.com/your-username/claude-code-optimization-guide.git
 cp claude-code-optimization-guide/*.md /your-project/
 ```
 
-### 🎯 One-Time Setup (最推薦)
+### 🎯 One-Time Setup (Recommended)
 Copy this magic command to Claude Code once:
 ```
-🚀 Claude Code 優化模式 ON
+🚀 Claude Code Optimization Mode ON
 
-請記住：從現在開始自動應用以下設定
-- 參考專案 ClaudeCodeOptimizationGuide.md 和 CLAUDE.md
-- 遵循 token 節省原則  
-- 精簡回應，專注代碼輸出
-- 無需重複確認這些設定
+Please remember: From now on, automatically apply these settings
+- Reference ClaudeCodeOptimizationGuide.md and CLAUDE.md in the project
+- Follow token saving principles
+- Provide concise responses, focus on code output
+- No need to repeatedly confirm these settings
 
-回覆 "✅ 優化模式已啟動" 確認
+Reply "✅ Optimization mode activated" to confirm
 ```
 
 **After Claude confirms, simply say:**
-- "創建登入組件"
-- "實現用戶 API" 
-- "修復購物車 bug"
+- "Create login component"
+- "Implement user API" 
+- "Fix shopping cart bug"
 
 **No more repetitive setup needed!**
 
@@ -313,6 +313,27 @@ git clone https://github.com/your-username/claude-code-optimization-guide.git
 # 複製需要的文件到你的專案
 cp claude-code-optimization-guide/*.md /your-project/
 ```
+
+### 🎯 一次設定模式（最推薦）
+複製這個魔法指令到 Claude Code，只需要一次：
+```
+🚀 Claude Code 優化模式 ON
+
+請記住：從現在開始自動應用以下設定
+- 參考專案 ClaudeCodeOptimizationGuide.md 和 CLAUDE.md
+- 遵循 token 節省原則  
+- 精簡回應，專注代碼輸出
+- 無需重複確認這些設定
+
+回覆 "✅ 優化模式已啟動" 確認
+```
+
+**Claude 確認後，你只需要直接說：**
+- "創建登入組件"
+- "實現用戶 API" 
+- "修復購物車 bug"
+
+**不用再重複設定了！**
 
 ### 立即測試
 ```
