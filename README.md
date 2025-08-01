@@ -42,6 +42,27 @@ git clone https://github.com/your-username/claude-code-optimization-guide.git
 cp claude-code-optimization-guide/*.md /your-project/
 ```
 
+### 🎯 One-Time Setup (最推薦)
+Copy this magic command to Claude Code once:
+```
+🚀 Claude Code 優化模式 ON
+
+請記住：從現在開始自動應用以下設定
+- 參考專案 ClaudeCodeOptimizationGuide.md 和 CLAUDE.md
+- 遵循 token 節省原則  
+- 精簡回應，專注代碼輸出
+- 無需重複確認這些設定
+
+回覆 "✅ 優化模式已啟動" 確認
+```
+
+**After Claude confirms, simply say:**
+- "創建登入組件"
+- "實現用戶 API" 
+- "修復購物車 bug"
+
+**No more repetitive setup needed!**
+
 ### Immediate Test
 ```
 Refer to ClaudeCodeOptimizationGuide.md and CLAUDE.md in the project, please follow token saving principles.
@@ -126,22 +147,49 @@ Output: Complete code file, no explanation
 
 ---
 
-## 📈 Usage Statistics Tracking
+## 📈 Advanced Usage Monitoring Tools
 
-### Recommended Data to Track
-```markdown
-## Daily Usage Log
-| Time | Task Type | Used Template | Token Estimate | Savings |
-|------|-----------|---------------|----------------|---------|
-| 09:00 | React Component | ✅ | ~1500 | -40% |
-| 10:30 | API Development | ✅ | ~1200 | -35% |
+### 🛠️ Professional Token Tracking
+Instead of manual tracking, use these powerful tools:
 
-## Weekly Summary
-- Total Tasks: [Number]
-- Template Usage Rate: [Percentage]
-- Token Savings Rate: [Percentage]
-- Most Effective Template: [Name]
+#### ccusage - Comprehensive Analysis Tool
+```bash
+# Install
+npm install -g ccusage
+
+# Daily usage
+ccusage daily
+
+# Real-time monitoring  
+ccusage blocks --live
+
+# Monthly trends
+ccusage monthly
 ```
+
+#### Claude-Code-Usage-Monitor - Real-time Dashboard
+```bash
+# Setup
+git clone https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor.git
+cd Claude-Code-Usage-Monitor
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+
+# Run dashboard
+./ccusage_monitor.py --plan max20  # For Max plan
+./ccusage_monitor.py --plan max5   # For 5-hour plan
+```
+
+#### Additional Ecosystem Tools
+- **CCSeva**: Mac menu bar application
+- **Raycast Extension**: Quick usage checks
+- **Browser Extensions**: Seamless integration
+
+**Why These Tools Matter:**
+- 🎯 **Accurate Tracking** - Analyze actual JSONL usage files
+- ⚡ **Real-time Monitoring** - Live token consumption updates
+- 📊 **Usage Insights** - Identify consumption patterns
+- 💰 **Cost Analysis** - Compare Claude Code vs API costs
 
 ---
 
@@ -350,22 +398,49 @@ cp claude-code-optimization-guide/*.md /your-project/
 
 ---
 
-## 📈 使用統計追蹤
+## 📈 進階使用監控工具
 
-### 建議追蹤的數據
-```markdown
-## 每日使用記錄
-| 時間 | 任務類型 | 使用模板 | Token 估算 | 節省效果 |
-|------|----------|----------|------------|----------|
-| 09:00 | React 組件 | ✅ | ~1500 | -40% |
-| 10:30 | API 開發 | ✅ | ~1200 | -35% |
+### 🛠️ 專業 Token 追蹤
+告別手動記錄，使用這些強大工具：
 
-## 週度總結
-- 總任務數: [數量]
-- 模板使用率: [百分比]
-- Token 節省率: [百分比]
-- 最有效模板: [名稱]
+#### ccusage - 全面分析工具
+```bash
+# 安裝
+npm install -g ccusage
+
+# 查看當日使用
+ccusage daily
+
+# 實時監控
+ccusage blocks --live
+
+# 月度趨勢
+ccusage monthly
 ```
+
+#### Claude-Code-Usage-Monitor - 實時儀表板
+```bash
+# 設定
+git clone https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor.git
+cd Claude-Code-Usage-Monitor
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+
+# 執行儀表板
+./ccusage_monitor.py --plan max20  # Max 方案
+./ccusage_monitor.py --plan max5   # 5小時方案
+```
+
+#### 其他生態系統工具
+- **CCSeva**：Mac 選單列應用程式
+- **Raycast 擴展**：快速使用量檢查
+- **瀏覽器擴展**：無縫整合
+
+**這些工具的價值：**
+- 🎯 **精確追蹤** - 分析實際 JSONL 使用檔案
+- ⚡ **實時監控** - 即時 token 消耗更新
+- 📊 **使用洞察** - 識別消耗模式
+- 💰 **成本分析** - 比較 Claude Code vs API 成本
 
 ---
 
