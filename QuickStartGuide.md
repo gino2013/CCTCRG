@@ -136,24 +136,106 @@ Phase 2: Based on previous code, add styling
 Phase 3: On existing foundation, add advanced features
 ```
 
-### 📊 Token Usage Monitoring
+### 📊 Token Usage Monitoring with Advanced Tools
 
-#### Daily Tracking Table
-| Time | Task Type | Used Template | Token Estimate | Savings Effect |
-|------|-----------|---------------|----------------|----------------|
-| 09:00 | React Component | ✅ Template | ~1500 | -40% |
-| 10:30 | API Development | ✅ Template | ~1200 | -35% |
-| 14:00 | Bug Fix | ✅ Template | ~800 | -50% |
+#### Discovering the Game-Changers
+While browsing V2EX one evening, I discovered a post about "ccusage" - a tool specifically designed to analyze Claude Code token usage. This was exactly what I'd been looking for!
 
-#### Weekly Report Format
+The reality is, every time I code with Claude Code, I enjoy the process but constantly worry about unknowingly exhausting my tokens. Especially when I'm in the flow state, I don't want to stop, but I'm always concerned about accidentally exceeding limits.
+
+#### Tool 1: ccusage - Comprehensive Usage Analysis
+**Installation:**
+```bash
+npm install -g ccusage
 ```
-This Week's Claude Code Usage Report:
-- Total Tasks: [Number]
-- Template Usage Rate: [Percentage]
-- Estimated Token Savings: [Percentage]
-- Most Effective Template: [Template Name]
-- Areas for Optimization: [Description]
+
+**Key Features:**
+- `ccusage daily` - View today's usage
+- `ccusage monthly` - Monthly usage trends  
+- `ccusage session` - Detailed session breakdown
+- `ccusage blocks` - 5-hour block statistics (matches Claude Code billing)
+- `ccusage blocks --live` - Real-time monitoring (updates every 3 seconds)
+
+**Why It's Amazing:**
+Claude Code stores all usage records locally in JSONL files. ccusage analyzes these files to show token counts, cost estimates, usage times, and even calculates API cost comparisons to show how much Claude Code saves you.
+
+#### Tool 2: Claude-Code-Usage-Monitor - Real-time Dashboard
+
+**Installation:**
+```bash
+git clone https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor.git
+cd Claude-Code-Usage-Monitor
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
+
+**Usage:**
+```bash
+# For Max plan (20 hours, 1M tokens)
+./ccusage_monitor.py --plan max20
+
+# For 5-hour plan (200K tokens)  
+./ccusage_monitor.py --plan max5
+
+# Auto-detect from history
+./ccusage_monitor.py --plan custom_max
+```
+
+**Features:**
+- Beautiful real-time monitoring dashboard
+- Progress bars with usage predictions
+- Timezone and reset hour customization
+- Background monitoring with tmux support
+
+#### Practical Workflow Integration
+
+**Daily Routine:**
+```bash
+# Check morning usage
+ccusage daily
+
+# Start real-time monitoring
+claude-monitor  # (set as alias)
+
+# Background monitoring
+tmux new-session -d -s claude-monitor './ccusage_monitor.py --plan max20'
+```
+
+**Pro Tips:**
+```bash
+# Create convenient alias
+alias claude-monitor='cd ~/Claude-Code-Usage-Monitor && source venv/bin/activate && ./ccusage_monitor.py --plan max20'
+
+# Timezone customization
+./ccusage_monitor.py --plan max20 --reset-hour 8 --timezone America/New_York
+
+# Accurate cost calculation
+ccusage --mode calculate
+```
+
+#### Additional Ecosystem Tools
+- **CCSeva**: Mac menu bar application for usage display
+- **Raycast Extension**: Check usage directly in Raycast
+- **ccusage Raycast Store**: Official extension by the developer
+
+#### Impact on Development Workflow
+These tools completely changed my approach to Claude Code:
+
+**Before:** Constantly worried about token usage, conservative in experimentation
+**After:** Clear usage awareness, confident exploration, data-driven work planning
+
+**Usage Pattern Insights:**
+- Complex refactoring tasks consume tokens quickly
+- New feature development has stable consumption  
+- Bug fixes are generally token-efficient
+- Template usage significantly reduces consumption
+
+**Monthly Analysis Benefits:**
+- Identify high-consumption scenarios
+- Optimize work scheduling around reset times
+- Plan important coding sessions strategically
+- Track improvement in token efficiency over time
 
 ---
 
@@ -430,24 +512,107 @@ cp QuickStartGuide.md /your-project-root/
 第三階段: 在現有基礎上，加入進階功能
 ```
 
-### 📊 Token 使用監控
+### 📊 進階工具實現 Token 使用監控
 
-#### 每日追蹤表格
-| 時間 | 任務類型 | 使用模板 | Token 估算 | 節省效果 |
-|------|----------|----------|------------|----------|
-| 09:00 | React 組件 | ✅ 組件模板 | ~1500 | -40% |
-| 10:30 | API 開發 | ✅ API 模板 | ~1200 | -35% |
-| 14:00 | Bug 修復 | ✅ 修復模板 | ~800 | -50% |
+#### 意外的發現
+那天晚上在V2EX上閒逛，看到有人發了一個帖子說「發現了一個神器：ccusage，專門用來分析Claude Code的token使用情況」。我當時就想，這不就是我一直在找的東西嗎？
 
-#### 週報告格式
+說實話，自從開始用Claude Code，我就一直有個心病。你懂的，每次寫代碼的時候都很爽，但總是擔心會不會不知不覺就把token用完了。特別是進入狀態的時候，根本不想停下來，可是又怕一不小心就超額了。
+
+#### 工具一：ccusage - 全面使用分析
+
+**安裝方式：**
+```bash
+npm install -g ccusage
 ```
-本週 Claude Code 使用報告:
-- 總任務數: [數量]
-- 使用模板率: [百分比]
-- 預估 Token 節省: [百分比]
-- 最有效的模板: [模板名稱]
-- 需要優化的場景: [描述]
+
+**核心功能：**
+- `ccusage daily` - 查看當天使用情況
+- `ccusage monthly` - 每月使用趨勢
+- `ccusage session` - 詳細會話記錄
+- `ccusage blocks` - 5小時區塊統計（符合Claude Code計費方式）
+- `ccusage blocks --live` - 實時監控（每3秒更新）
+
+**為什麼這麼神奇：**
+原來Claude Code會把所有的使用記錄都保存在本地的JSONL文件中。ccusage就是分析這些文件，顯示token數量、成本估算、使用時間，還能計算出如果用API的話要花多少錢，讓你知道Claude Code到底幫你省了多少。
+
+#### 工具二：Claude-Code-Usage-Monitor - 實時監控儀表板
+
+**安裝過程：**
+```bash
+git clone https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor.git
+cd Claude-Code-Usage-Monitor
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
+
+**使用方式：**
+```bash
+# Max計劃（20小時，100萬token）
+./ccusage_monitor.py --plan max20
+
+# 5小時計劃（20萬token）
+./ccusage_monitor.py --plan max5
+
+# 自動從歷史記錄中偵測
+./ccusage_monitor.py --plan custom_max
+```
+
+**強大功能：**
+- 美觀的實時監控儀表板
+- 帶使用預測的進度條
+- 時區和重置時間自定義
+- 支援tmux後台監控
+
+#### 實際工作流程整合
+
+**每日例行公事：**
+```bash
+# 檢查早上使用情況
+ccusage daily
+
+# 啟動實時監控
+claude-monitor  # （設定為別名）
+
+# 後台監控
+tmux new-session -d -s claude-monitor './ccusage_monitor.py --plan max20'
+```
+
+**進階技巧：**
+```bash
+# 設定方便的別名
+alias claude-monitor='cd ~/Claude-Code-Usage-Monitor && source venv/bin/activate && ./ccusage_monitor.py --plan max20'
+
+# 時區自定義
+./ccusage_monitor.py --plan max20 --reset-hour 8 --timezone America/New_York
+
+# 精確成本計算
+ccusage --mode calculate
+```
+
+#### 生態系統中的其他工具
+- **CCSeva**：Mac選單列應用程式顯示使用情況
+- **Raycast擴展**：直接在Raycast中查看使用情況
+- **ccusage Raycast Store**：開發者官方擴展
+
+#### 對開發工作流程的影響
+這些工具完全改變了我使用Claude Code的方式：
+
+**以前：** 總是提心吊膽，不敢大膽實驗
+**現在：** 使用狀況一清二楚，可以放心探索，根據數據規劃工作
+
+**使用模式洞察：**
+- 複雜重構任務token消耗特別快
+- 新功能開發相對穩定
+- Bug修復通常比較節省token
+- 使用模板能顯著減少消耗
+
+**月度分析的好處：**
+- 識別高耗用場景
+- 根據重置時間優化工作安排
+- 策略性規劃重要編碼工作
+- 追蹤token效率的改善情況
 
 ---
 
