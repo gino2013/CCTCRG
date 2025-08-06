@@ -23,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/claude-code-optimization-guide.git"
+    "url": "git@github.com:gino2013/CCTCRG.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/claude-code-optimization-guide/issues"
+    "url": "https://github.com/gino2013/CCTCRG/issues"
   },
-  "homepage": "https://github.com/your-username/claude-code-optimization-guide#readme"
+  "homepage": "https://github.com/gino2013/CCTCRG#readme"
 }

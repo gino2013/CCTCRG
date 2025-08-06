@@ -18,10 +18,10 @@
 ### 🚀 Method 1: One-Click Auto Install (Recommended)
 ```bash
 # Global installation + project configuration
-curl -sSL https://raw.githubusercontent.com/your-repo/claude-code-guide/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/gino2013/CCTCRG/main/install.sh | bash
 
 # Or clone the repository first
-git clone https://github.com/your-username/claude-code-optimization-guide.git
+git clone git@github.com:gino2013/CCTCRG.git
 cd claude-code-optimization-guide
 ./install.sh
 ```
@@ -29,7 +29,7 @@ cd claude-code-optimization-guide
 ### ⚡ Method 2: Quick Initialization
 ```bash
 # Download quick initialization tool
-curl -sSL https://raw.githubusercontent.com/your-repo/claude-code-guide/main/claude-init > claude-init
+curl -sSL https://raw.githubusercontent.com/gino2013/CCTCRG/main/claude-init > claude-init
 chmod +x claude-init
 ./claude-init
 ```
@@ -37,9 +37,9 @@ chmod +x claude-init
 ### 📂 Method 3: Manual Copy
 ```bash
 # Clone the entire repository
-git clone https://github.com/your-username/claude-code-optimization-guide.git
+git clone git@github.com:gino2013/CCTCRG.git
 # Copy required files to your project
-cp claude-code-optimization-guide/*.md /your-project/
+cp CCTCRG/*.md /your-project/
 ```
 
 ### 🎯 One-Time Setup (Recommended)
@@ -292,10 +292,10 @@ This guide is licensed under MIT. Feel free to use and modify. If it helps you, 
 ### 🚀 方式一：一鍵自動安裝（推薦）
 ```bash
 # 全域安裝 + 專案配置
-curl -sSL https://raw.githubusercontent.com/your-repo/claude-code-guide/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/gino2013/CCTCRG/main/install.sh | bash
 
 # 或者先克隆倉庫
-git clone https://github.com/your-username/claude-code-optimization-guide.git
+git clone git@github.com:gino2013/CCTCRG.git
 cd claude-code-optimization-guide
 ./install.sh
 ```
@@ -303,7 +303,7 @@ cd claude-code-optimization-guide
 ### ⚡ 方式二：快速初始化
 ```bash
 # 下載快速初始化工具
-curl -sSL https://raw.githubusercontent.com/your-repo/claude-code-guide/main/claude-init > claude-init
+curl -sSL https://raw.githubusercontent.com/gino2013/CCTCRG/main/claude-init > claude-init
 chmod +x claude-init
 ./claude-init
 ```
@@ -311,9 +311,9 @@ chmod +x claude-init
 ### 📂 方式三：手動複製
 ```bash
 # 克隆整個倉庫
-git clone https://github.com/your-username/claude-code-optimization-guide.git
+git clone git@github.com:gino2013/CCTCRG.git
 # 複製需要的文件到你的專案
-cp claude-code-optimization-guide/*.md /your-project/
+cp CCTCRG/*.md /your-project/
 ```
 
 ### 🎯 一次設定模式（最推薦）

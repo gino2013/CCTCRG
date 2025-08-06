@@ -94,10 +94,10 @@ npx claude-code-guide init
 ### GitHub Template Repository
 ```bash
 # When creating new project
-gh repo create my-project --template your-username/claude-code-template
+gh repo create my-project --template gino2013/CCTCRG
 
 # Or add to existing project
-git remote add template https://github.com/your-username/claude-code-template.git
+git remote add template git@github.com:gino2013/CCTCRG.git
 git fetch template
 git merge template/main --allow-unrelated-histories
 ```
@@ -192,8 +192,8 @@ npx create-claude-project my-app
    # claude-code-guide.rb
    class ClaudeCodeGuide < Formula
      desc "Claude Code optimization guide and tools"
-     homepage "https://github.com/your-username/claude-code-optimization-guide"
-     url "https://github.com/your-username/claude-code-optimization-guide/archive/v1.0.0.tar.gz"
+     homepage "git@github.com:gino2013/CCTCRG.git"
+     url "git@github.com:gino2013/CCTCRG.git/archive/v1.0.0.tar.gz"
      
      def install
        bin.install "claude-init"
@@ -414,10 +414,10 @@ npx claude-code-guide init
 ### GitHub Template Repository
 ```bash
 # 創建新專案時
-gh repo create my-project --template your-username/claude-code-template
+gh repo create my-project --template gino2013/CCTCRG
 
 # 或為現有專案添加
-git remote add template https://github.com/your-username/claude-code-template.git
+git remote add template git@github.com:gino2013/CCTCRG.git
 git fetch template
 git merge template/main --allow-unrelated-histories
 ```
@@ -512,8 +512,8 @@ npx create-claude-project my-app
    # claude-code-guide.rb
    class ClaudeCodeGuide < Formula
      desc "Claude Code optimization guide and tools"
-     homepage "https://github.com/your-username/claude-code-optimization-guide"
-     url "https://github.com/your-username/claude-code-optimization-guide/archive/v1.0.0.tar.gz"
+     homepage "git@github.com:gino2013/CCTCRG.git"
+     url "git@github.com:gino2013/CCTCRG.git/archive/v1.0.0.tar.gz"
      
      def install
        bin.install "claude-init"
